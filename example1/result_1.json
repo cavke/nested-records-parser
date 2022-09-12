@@ -1,0 +1,163 @@
+[
+	{
+		"CopyrightDate": "00000000",
+		"Duration": "000000",
+		"Iswc": "T0000000001000",
+		"OtherPublishers": [
+			{
+				"IpiName": "00288936892",
+				"MrShare": "05000",
+				"MrSociety": "000",
+				"PrShare": "02500",
+				"PrSociety": "000",
+				"PublisherName": {
+					"Name": "UNKNOWN PUBLISHER",
+					"PartyId": "000500000",
+					"Sequence": "02"
+				},
+				"PublisherType": "E",
+				"SrShare": "05000",
+				"SrSociety": "099"
+			}
+		],
+		"Publishers": [
+			{
+				"IpiName": "00700000010",
+				"MrShare": "01200",
+				"MrSociety": "034",
+				"PrShare": "01200",
+				"PrSociety": "010",
+				"PublisherName": {
+					"Name": "Original Publisher 10",
+					"PartyId": "Pub10",
+					"Sequence": "01"
+				},
+				"PublisherType": "E",
+				"SrShare": "01200",
+				"SrSociety": "099",
+				"TaxId": "000000000",
+				"Territories": [
+					{
+						"InclusionExclusionInd": "I",
+						"MrShare": "00418",
+						"PrShare": "00209",
+						"SrShare": "00000",
+						"TisCode": "2136"
+					}
+				]
+			}
+		],
+		"SubmitterWorkNbr": "00000000100001",
+		"WorkTitle": "Song 1 - 1 Pub1/ 0 Wrt"
+	},
+	{
+		"CopyrightDate": "00000000",
+		"Duration": "000000",
+		"Iswc": "T0000000002000",
+		"Publishers": [
+			{
+				"IpiName": "00700000020",
+				"MrShare": "01200",
+				"MrSociety": "034",
+				"PrShare": "01200",
+				"PrSociety": "010",
+				"PublisherName": {
+					"Name": "Original Publisher 20",
+					"PartyId": "Pub20",
+					"Sequence": "01"
+				},
+				"PublisherType": "E",
+				"SrShare": "01200",
+				"SrSociety": "099",
+				"TaxId": "000000000"
+			},
+			{
+				"IpiName": "00547043753",
+				"MrShare": "00000",
+				"MrSociety": "034",
+				"PrShare": "00000",
+				"PrSociety": "010",
+				"PublisherName": {
+					"Name": "RESERVE TEST MUSIC",
+					"PartyId": "RMM",
+					"Sequence": "01"
+				},
+				"PublisherType": "AM",
+				"SrShare": "00000",
+				"SrSociety": "099",
+				"SubmitterAgreementNbr": "3745610",
+				"TaxId": "000000000",
+				"Territories": [
+					{
+						"InclusionExclusionInd": "I",
+						"MrShare": "00418",
+						"PrShare": "00209",
+						"SrShare": "00000",
+						"TisCode": "2136"
+					}
+				]
+			}
+		],
+		"SubmitterWorkNbr": "00000000100002",
+		"WorkTitle": "Song 2 - 1 Pub2/ 0 Wrt // 1 SPU-AM"
+	},
+	{
+		"CopyrightDate": "00000000",
+		"Duration": "000000",
+		"Iswc": "T0000000005000",
+		"Publishers": [
+			{
+				"IpiName": "00700000010",
+				"MrShare": "01000",
+				"MrSociety": "034",
+				"PrShare": "01000",
+				"PrSociety": "010",
+				"PublisherName": {
+					"Name": "Dup Original Publisher 10 all 10%",
+					"PartyId": "Pub10",
+					"Sequence": "01"
+				},
+				"PublisherType": "E",
+				"SrShare": "01000",
+				"SrSociety": "099",
+				"TaxId": "000000000",
+				"Territories": [
+					{
+						"InclusionExclusionInd": "I",
+						"MrShare": "00418",
+						"PrShare": "00209",
+						"SrShare": "00000",
+						"TisCode": "2136"
+					}
+				]
+			},
+			{
+				"IpiName": "00700000050",
+				"MrShare": "01000",
+				"MrSociety": "034",
+				"PrShare": "01000",
+				"PrSociety": "010",
+				"PublisherName": {
+					"Name": "Original Publisher 50",
+					"PartyId": "Pub50",
+					"Sequence": "01"
+				},
+				"PublisherType": "E",
+				"SrShare": "01000",
+				"SrSociety": "099",
+				"TaxId": "000000000",
+				"Territories": [
+					{
+						"InclusionExclusionInd": "I",
+						"MrShare": "00418",
+						"PrShare": "00209",
+						"SrShare": "00000",
+						"TisCode": "2136"
+					}
+				]
+			}
+		],
+		"SubmitterWorkNbr": "00000000100005",
+		"WorkTitle": "Song 5 - 2 Pub1,2 / 2 Wrt - 1 new 1 old"
+	}
+]

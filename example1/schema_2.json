@@ -1,0 +1,186 @@
+{
+  "parser_settings": {
+    "version": "omni.2.1",
+    "file_format_type": "fixedlength2"
+  },
+  "file_declaration": {
+    "envelopes": [
+      {
+        "name": "HDR", "min": 1, "max": 1,
+        "columns": [
+          { "name": "recordType", "start_pos": 1, "length": 3 },
+          { "name": "senderType", "start_pos": 4, "length": 2 }
+        ],
+        "child_envelopes": [
+          {
+            "name": "GRH", "max": -1,
+            "columns": [ { "name": "id", "start_pos": 7, "length": 5 } ],
+            "child_envelopes": [
+              {
+                "name": "NWR", "max": -1, "is_target": true,
+                "columns": [
+                        { "name": "WorkTitle", "start_pos": 20, "length": 60 },
+                        { "name": "Language", "start_pos": 80, "length": 2},
+                        { "name": "SubmitterWorkNbr", "start_pos": 82, "length": 14},
+                        { "name": "Iswc", "start_pos": 96, "length": 14},
+                        { "name": "CopyrightDate", "start_pos": 107, "length": 8},
+                        { "name": "CopyrightNbr", "start_pos": 115, "length": 12},
+                        { "name": "Duration", "start_pos": 130, "length": 6}
+                ],
+                "child_envelopes": [
+                  {
+                    "name": "SPU", "min": 0, "max": -1,
+                    "columns": [
+                      { "name": "Sequence", "start_pos": 20, "length": 2 },
+                      { "name": "PartyId", "start_pos": 22, "length": 9 },
+                      { "name": "PublisherName", "start_pos": 31, "length": 45 },
+                      { "name": "PublisherType", "start_pos": 77, "length": 2 },
+                      { "name": "TaxId", "start_pos": 79, "length": 9 },
+                      { "name": "IpiName", "start_pos": 88, "length": 11 },
+                      { "name": "SubmitterAgreementNbr", "start_pos": 99, "length": 14 },
+                      { "name": "PrSociety", "start_pos": 113, "length": 3 },
+                      { "name": "PrShare", "start_pos": 116, "length": 5 },
+                      { "name": "MrSociety", "start_pos": 121, "length": 3 },
+                      { "name": "MrShare", "start_pos": 124, "length": 5 },
+                      { "name": "SrSociety", "start_pos": 129, "length": 3 },
+                      { "name": "SrShare", "start_pos": 132, "length": 5 }
+                    ],
+                    "child_envelopes": [
+                      {
+                        "name": "NPN", "min": 0, "max": 1,
+                        "columns": [
+                          { "name": "Sequence", "start_pos": 20, "length": 2 },
+                          { "name": "PartyId", "start_pos": 22, "length": 9 },
+                          { "name": "PublisherName", "start_pos": 31, "length": 480 },
+                          { "name": "LanguageCode", "start_pos": 511, "length": 2 }
+                        ]
+                      },
+                      {
+                        "name": "SPT", "min": 0, "max": -1,
+                        "columns": [
+                          { "name": "PrShare", "start_pos": 35, "length": 5 },
+                          { "name": "MrShare", "start_pos": 40, "length": 5 },
+                          { "name": "SrShare", "start_pos": 45, "length": 5 },
+                          { "name": "InclusionExclusionInd", "start_pos": 50, "length": 1 },
+                          { "name": "TisCode", "start_pos": 51, "length": 4 }
+                        ]
+                      }
+                    ]
+                  },
+
+                  {
+                    "name": "OPU", "min": 0, "max": -1,
+                    "columns": [
+                      { "name": "Sequence", "start_pos": 20, "length": 2 },
+                      { "name": "PartyId", "start_pos": 22, "length": 9 },
+                      { "name": "PublisherName", "start_pos": 31, "length": 45 },
+                      { "name": "PublisherType", "start_pos": 77, "length": 2 },
+                      { "name": "TaxId", "start_pos": 79, "length": 9 },
+                      { "name": "IpiName", "start_pos": 88, "length": 11 },
+                      { "name": "SubmitterAgreementNbr", "start_pos": 99, "length": 14 },
+                      { "name": "PrSociety", "start_pos": 113, "length": 3 },
+                      { "name": "PrShare", "start_pos": 116, "length": 5 },
+                      { "name": "MrSociety", "start_pos": 121, "length": 3 },
+                      { "name": "MrShare", "start_pos": 124, "length": 5 },
+                      { "name": "SrSociety", "start_pos": 129, "length": 3 },
+                      { "name": "SrShare", "start_pos": 132, "length": 5 }
+                    ],
+                    "child_envelopes": [
+                      {
+                        "name": "NPN", "min": 0, "max": 1,
+                        "columns": [
+                          { "name": "Sequence", "start_pos": 20, "length": 2 },
+                          { "name": "PartyId", "start_pos": 22, "length": 9 },
+                          { "name": "PublisherName", "start_pos": 31, "length": 480 },
+                          { "name": "LanguageCode", "start_pos": 511, "length": 2 }
+                        ]
+                      }
+                    ]
+                  },
+
+                  {
+                    "name": "SWR", "min": 0, "max": -1,
+                    "child_envelopes": [
+                      {
+                        "name": "SWT", "min": 0, "max": -1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "GRT"
+          }
+        ]
+      },
+      { 
+        "name": "TRL" 
+      } 
+    ]
+  },
+
+ "transform_declarations": {
+   "FINAL_OUTPUT": { "object": {
+     "WorkTitle": { "xpath": "WorkTitle" },
+     "Language": { "xpath": "Language" },
+     "SubmitterWorkNbr": { "xpath": "SubmitterWorkNbr" },
+     "Iswc": { "xpath": "Iswc" },
+     "CopyrightDate": { "xpath": "CopyrightDate" },
+     "CopyrightNbr": { "xpath": "CopyrightNbr" },
+     "Duration": { "xpath": "Duration" },
+     "Publishers": { "array": [
+       { "xpath": "SPU", "object": {
+         "PublisherType": { "xpath": "PublisherType" },
+         "TaxId": { "xpath": "TaxId" },
+         "IpiName": { "xpath": "IpiName" },
+         "SubmitterAgreementNbr": { "xpath": "SubmitterAgreementNbr" },
+         "PrSociety": { "xpath": "PrSociety" },
+         "PrShare": { "xpath": "PrShare" },
+         "MrSociety": { "xpath": "MrSociety" },
+         "MrShare": { "xpath": "MrShare" },
+         "SrSociety": { "xpath": "SrSociety" },
+         "SrShare": { "xpath": "SrShare" },
+         "PublisherName": { "object": {
+             "Sequence": { "xpath": "Sequence"},
+             "PartyId": { "xpath": "PartyId"},
+             "Name": { "xpath": "PublisherName"},
+             "LanguageCode": { "xpath": "LanguageCode"}
+         }},
+         "NonRomanAlphabetPublisherName": { "xpath": "NPN/PublisherName" },
+         "Territories": { "array": [
+           { "xpath": "SPT", "object": {
+             "PrShare": { "xpath": "PrShare" },
+             "MrShare": { "xpath": "MrShare" },
+             "SrShare": { "xpath": "SrShare" },
+             "InclusionExclusionInd": { "xpath": "InclusionExclusionInd" },
+             "TisCode": { "xpath": "TisCode" }
+           }}
+         ]}
+       }}
+     ]},
+     "OtherPublishers": { "array": [
+       { "xpath": "OPU", "object": {
+         "PublisherType": { "xpath": "PublisherType" },
+         "TaxId": { "xpath": "TaxId" },
+         "IpiName": { "xpath": "IpiName" },
+         "SubmitterAgreementNbr": { "xpath": "SubmitterAgreementNbr" },
+         "PrSociety": { "xpath": "PrSociety" },
+         "PrShare": { "xpath": "PrShare" },
+         "MrSociety": { "xpath": "MrSociety" },
+         "MrShare": { "xpath": "MrShare" },
+         "SrSociety": { "xpath": "SrSociety" },
+         "SrShare": { "xpath": "SrShare" },
+         "PublisherName": { "object": {
+             "Sequence": { "xpath": "Sequence"},
+             "PartyId": { "xpath": "PartyId"},
+             "Name": { "xpath": "PublisherName"},
+             "LanguageCode": { "xpath": "LanguageCode"}
+         }},
+         "NonRomanAlphabetPublisherName": { "xpath": "NPN/PublisherName" }
+       }}
+     ]}
+   }}
+ }
+}

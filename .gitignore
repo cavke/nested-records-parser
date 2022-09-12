@@ -1,0 +1,14 @@
+# Mac OS X files
+.DS_Store
+
+# VSCode
+.vscode
+
+# Test binary, build with `go test -c`
+*.test
+
+# IDE data
+.idea
+
+# Ignore Build Dir
+/bin

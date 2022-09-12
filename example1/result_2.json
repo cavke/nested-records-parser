@@ -1,0 +1,117 @@
+[
+	{
+		"CopyrightDate": "00000000",
+		"Duration": "000000",
+		"Iswc": "T0000000001000",
+		"Publishers": [
+			{
+				"IpiName": "00700000010",
+				"MrShare": "01200",
+				"MrSociety": "034",
+				"NonRomanAlphabetPublisherName": "002090041800000I2136N001",
+				"PrShare": "01200",
+				"PrSociety": "010",
+				"PublisherName": {
+					"Name": "Original Publisher 10",
+					"PartyId": "Pub10",
+					"Sequence": "01"
+				},
+				"PublisherType": "E",
+				"SrShare": "01200",
+				"SrSociety": "099",
+				"TaxId": "000000000",
+				"Territories": [
+					{
+						"MrShare": "UBLIS",
+						"PrShare": "OWN P",
+						"SrShare": "HER"
+					},
+					{
+						"InclusionExclusionInd": "U",
+						"MrShare": "rt //",
+						"PrShare": "/ 0 W",
+						"SrShare": "1 SP",
+						"TisCode": "-AM"
+					},
+					{
+						"InclusionExclusionInd": "2",
+						"MrShare": "Publi",
+						"PrShare": "inal",
+						"SrShare": "sher",
+						"TisCode": "0"
+					},
+					{
+						"MrShare": "EST M",
+						"PrShare": "RVE T",
+						"SrShare": "USIC"
+					},
+					{
+						"InclusionExclusionInd": "I",
+						"MrShare": "00418",
+						"PrShare": "00209",
+						"SrShare": "00000",
+						"TisCode": "2136"
+					},
+					{
+						"InclusionExclusionInd": "n",
+						"MrShare": "2 Wrt",
+						"PrShare": ",2 /",
+						"SrShare": "- 1",
+						"TisCode": "ew 1"
+					},
+					{
+						"InclusionExclusionInd": "h",
+						"MrShare": "nal P",
+						"PrShare": "Origi",
+						"SrShare": "ublis",
+						"TisCode": "er 1"
+					},
+					{
+						"InclusionExclusionInd": "I",
+						"MrShare": "00418",
+						"PrShare": "00209",
+						"SrShare": "00000",
+						"TisCode": "2136"
+					},
+					{
+						"InclusionExclusionInd": "5",
+						"MrShare": "Publi",
+						"PrShare": "inal",
+						"SrShare": "sher",
+						"TisCode": "0"
+					},
+					{
+						"InclusionExclusionInd": "I",
+						"MrShare": "00418",
+						"PrShare": "00209",
+						"SrShare": "00000",
+						"TisCode": "2136"
+					},
+					{
+						"MrShare": "100",
+						"PrShare": "iter"
+					},
+					{
+						"InclusionExclusionInd": "0",
+						"MrShare": "0000I",
+						"PrShare": "00000",
+						"SrShare": "2136N",
+						"TisCode": "01"
+					},
+					{
+						"PrShare": "500"
+					},
+					{
+						"InclusionExclusionInd": "0",
+						"MrShare": "0000I",
+						"PrShare": "00000",
+						"SrShare": "2136N",
+						"TisCode": "01"
+					}
+				]
+			}
+		],
+		"SubmitterWorkNbr": "00000000100001",
+		"WorkTitle": "Song 1 - 1 Pub1/ 0 Wrt"
+	}
+]
