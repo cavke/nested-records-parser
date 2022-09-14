@@ -30,7 +30,7 @@
             ],
             "child_envelopes": [
               {
-                "name": "NWR", "header": "^NWR", "is_target": true,
+                "name": "NWR", "header": "^NWR|REV", "is_target": true,
                 "columns": [
                   { "name": "WorkTitle", "start_pos": 20, "length": 60 },
                   { "name": "Language", "start_pos": 80, "length": 2},
@@ -116,8 +116,44 @@
                     "child_envelopes": [
                       {
                         "name": "SWT", "header": "^SWT"
+                      },
+                      {
+                        "name": "PWR", "header": "^PWR"
                       }
                     ]
+                  },
+                  {
+                    "name": "OWR", "header": "^OWR"
+                  },
+                  {
+                    "name": "ALT", "header": "^ALT"
+                  },
+                  {
+                    "name": "EWT", "header": "^EWT"
+                  },
+                  {
+                    "name": "VER", "header": "^VER"
+                  },
+                  {
+                    "name": "PER", "header": "^PER"
+                  },
+                  {
+                    "name": "REC", "header": "^REC"
+                  },
+                  {
+                    "name": "ORN", "header": "^ORN"
+                  },
+                  {
+                    "name": "INS", "header": "^INS"
+                  },
+                  {
+                    "name": "IND", "header": "^IND"
+                  },
+                  {
+                    "name": "COM", "header": "^COM"
+                  },
+                  {
+                    "name": "ARI", "header": "^ARI"
                   }
                 ]
               },
@@ -148,8 +184,8 @@
 
   "transform_declarations": {
     "FINAL_OUTPUT": { "object": {
-      "HDRSenderType": { "xpath": "../../../HDR/senderType" },
-      "GRHTransactionType": { "xpath": "../../GRH/transactionType" },
+      "HDRSenderType": { "xpath": "../../senderType" },
+      "GRHTransactionType": { "xpath": "../transactionType" },
       "GRTTransactionCount": { "xpath": "../GRT/transactionCount" },
       "TRLGroupCount": { "xpath": "../../../TRL/groupCount" },
       "WorkTitle": { "xpath": "WorkTitle" },
