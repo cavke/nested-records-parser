@@ -1,12 +1,16 @@
-# problem with latest master version of omniparser 
+# Trying to output header/footer record attributes in the transformations 
 
-Everthing worked ok with omniparser commit `2045a13b` from 19.08.2022.
-and test file: `CWR-TEST_001.V21`
+Particulary:
+```
+"HDRSenderType": { "xpath": "../../../HDR/senderType" },
+"GRHTransactionType": { "xpath": "../../GRH/transactionType" },
+"GRTTransactionCount": { "xpath": "../GRT/transactionCount" },
+"TRLGroupCount": { "xpath": "../../../TRL/groupCount" },
+```
 
-Corresponding: 
-- `schema_1.json` - parser configuration
-- `result_1.json` - expected json result
+But keep getting following error for transformation: `GRHTransactionType`
+```
+Error: input 'CWR-TEST_001.V21' line 26: fail to transform. err: xpath query '../../GRH/transactionType' on 'FINAL_OUTPUT.GRHTransactionType' yielded more than one result
+```
 
-But with latest changes from master branch it is parsing wrongly:
-- `schema_2.json` - parser configuration aligned with new configuration names
-- `result_2.json` - wrong scrambled result
+If I remove the transformation, I'm getting just `HDRSenderType` field filled. 
