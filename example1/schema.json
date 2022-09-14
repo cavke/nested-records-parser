@@ -186,8 +186,6 @@
     "FINAL_OUTPUT": { "object": {
       "HDRSenderType": { "xpath": "../../senderType" },
       "GRHTransactionType": { "xpath": "../transactionType" },
-      "GRTTransactionCount": { "xpath": "../GRT/transactionCount" },
-      "TRLGroupCount": { "xpath": "../../../TRL/groupCount" },
       "WorkTitle": { "xpath": "WorkTitle" },
       "Language": { "xpath": "Language" },
       "SubmitterWorkNbr": { "xpath": "SubmitterWorkNbr" },
